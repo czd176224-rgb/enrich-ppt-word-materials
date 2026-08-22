@@ -1,0 +1,6 @@
+interface:
+  display_name: "PPT Word Material Enricher"
+  short_description: "Match logos and source visuals into the correct PPT Word pages"
+  default_prompt: "Use $enrich-ppt-word-materials to create a reviewable Word copy with verified company logos and only high-confidence object-level source visuals on the correct logical PPT pages; reject stamps, QR marks, text screenshots, and weak matches."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,37 @@
+[project]
+name = "enrich-ppt-word-materials"
+version = "0.3.0"
+description = "Conservatively match PDF/PPTX evidence to logical pages in a Word PPT manuscript."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "dar wang" }]
+keywords = ["codex-skill", "powerpoint", "word", "pdf", "pptx", "presentation"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "Pillow>=10",
+  "PyMuPDF>=1.24",
+  "pypdf>=4",
+  "python-docx>=1.1",
+  "python-pptx>=1.0",
+  "pywin32>=306; platform_system == 'Windows'",
+]
+
+[project.urls]
+Homepage = "https://github.com/czd176224-rgb/enrich-ppt-word-materials"
+Issues = "https://github.com/czd176224-rgb/enrich-ppt-word-materials/issues"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
